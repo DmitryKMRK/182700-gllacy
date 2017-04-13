@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Дмитрий Шлопак](https://up.htmlacademy.ru/htmlcss/17/user/182700).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/vladbesson).
 
 ---
 
