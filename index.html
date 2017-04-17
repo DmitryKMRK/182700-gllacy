@@ -28,20 +28,30 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a href="/" class="search"></a>
-          <div class="search-window">
-            <form action="/">
-              <input type="text" name="search" placeholder="Что ищем?">
-            </form>
+          <div class="search-block">
+            <a class="search" href="/"></a>
+            <div class="search-window">
+              <form action="/">
+                <input type="text" name="search" placeholder="Что ищем?">
+              </form>
+            </div>
           </div>
-          <a href="/" class="login">Вход</a>
-          <div class="login-window">
-            <ul>
-              <li><input type="text" name="login-email" placeholder="Электронная почта"></li>
-              <li><input type="password" name="login-password" placeholder="Пароль"></li>
-            </ul>
+          <div class="login-block">
+            <a class="login" href="/">Вход</a>
+            <div class="login-window">
+              <ul>
+                <li><input type="text" name="login-email" placeholder="Электронная почта"></li>
+                <li><input type="password" name="login-password" placeholder="Пароль"></li>
+              </ul>
+            </div>
           </div>
-          <a href="/" class="cart">Пусто</a>
+          <div class="cart-block">
+            <a class="cart" href="/">Пусто</a>
+          </div>
+        </div>
+        <div class="opening-times">
+          С 10 до 20, ежедневно
+          <span class="opening-times-tel">8 812 450-25-25</span>
         </div>
       </div>
     </header>
@@ -49,61 +59,58 @@
 
     <main>
       <div class="container">
-        <div class="opening-times">
-          С 10 до 20, ежедневно
-          <span class="opening-times-tel">8 812 450-25-25</span>
-        </div>
-
         <div class="slider">
           <div class="slide slide-1">
             <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-            <a href="/" class="button slider-button">Давайте оба!</a>
+            <a class="button slider-button" href="/">Давайте оба!</a>
           </div>
           <div class="slide slide-2">
             <h2>Шоколадный пломбир и лимонный сорбет</h2>
-            <a href="/" class="button slider-button">Давайте оба!</a>
+            <a class="button slider-button" href="/">Давайте оба!</a>
           </div>
           <div class="slide slide-3">
             <h2>Пломбир с помадкой и клубничный щербет</h2>
-            <a href="/" class="button slider-button">Давайте оба!</a>
+            <a class="button slider-button" href="/">Давайте оба!</a>
           </div>
         </div>
 
-        <div class="promo promo-left">
-          <h3>Малинка даром!</h3>
-          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-          <a href="" class="button promo-button">Хочу варенье!</a>
-        </div>
-        <div class="promo promo-right">
-          <h3>Шоколадки даром!</h3>
-          <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <a href="" class="button promo-button">Хочу шоколадки!</a>
+        <div class="promo-block">
+          <div class="promo promo-left">
+            <h3>Малинка даром!</h3>
+            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+            <a class="button promo-button" href="">Хочу варенье!</a>
+          </div>
+          <div class="promo promo-right">
+            <h3>Шоколадки даром!</h3>
+            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+            <a class="button promo-button" href="">Хочу шоколадки!</a>
+          </div>
         </div>
 
         <div class="hits-list">
-          <div class="catalog-item hit-item-1">
+          <div class="catalog-item catalog-item-hit">
             <img src="http://placehold.it/250x250" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <span>310 р/кг</span>
             <a href="/">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-            <a href="/" class="button item-button">Быстрый просмотр</a>
+            <a class="button item-button" href="/">Быстрый просмотр</a>
           </div>
-          <div class="catalog-item hit-item-2">
+          <div class="catalog-item catalog-item-hit">
             <img src="http://placehold.it/250x250" alt="Сливочно-кофейное с кусочками шоколада">
             <span>380 р/кг</span>
             <a href="/">Сливочно-кофейное с кусочками шоколада</a>
-            <a href="/" class="button item-button">Быстрый просмотр</a>
+            <a class="button item-button" href="/">Быстрый просмотр</a>
           </div>
-          <div class="catalog-item hit-item-3">
+          <div class="catalog-item catalog-item-hit">
             <img src="http://placehold.it/250x250" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <span>355 р/кг</span>
             <a href="/">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            <a href="/" class="button item-button">Быстрый просмотр</a>
+            <a class="button item-button" href="/">Быстрый просмотр</a>
           </div>
-          <div class="catalog-item hit-item-4">
+          <div class="catalog-item catalog-item-hit">
             <img src="http://placehold.it/250x250" alt="Сливочное крем-брюле с карамельной подливкой">
             <span>415 р/кг</span>
             <a href="/">Сливочное крем-брюле с карамельной подливкой</a>
-            <a href="/" class="button item-button">Быстрый просмотр</a>
+            <a class="button item-button" href="/">Быстрый просмотр</a>
           </div>
         </div>
 
@@ -115,56 +122,58 @@
             <p class="feature feature-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
         </div>
 
-        <div class="blog">
-          Новое в нашем блоге
-          <a href="/"><h4>10 способов сервировки фруктовых щербетов<br>
-          к столу</h4></a>
-        </div>
-
-        <div class="email-listing">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-          <form action="/">
-            <input type="text" name="email" placeholder="Электронная почта">
-            <button class="button email-button" type="submit">Отправить</button>
-          </form>
+        <div class="blog-email-block">
+          <div class="blog">
+            Новое в нашем блоге
+            <a href="/"><h4>10 способов сервировки фруктовых щербетов<br>
+            к столу</h4></a>
+          </div>
+          <div class="email-listing">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <form action="/">
+              <input type="text" name="email" placeholder="Электронная почта">
+              <button class="button email-button" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
 
+
     <div class="map">
       <img src="http://placehold.it/1200x400" alt="Карта">
-    </div>
-
-    <div class="contacts">
-      <p>Адрес главного офиса и<br>
-        офлайн магазина:<br>
-        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-      </p>
-      <p>Для заказов по телефону:<br>
-        <b>8 812 450-25-25</b><br>
-        (с 10 до 20 ежедневно)
-      </p>
-      <a href="/" class="button contacts-button">Форма обратной связи</a>
-      <div class="contacts-form">
-        <b>Мы обязательно вам ответим!</b>
-        <button class="contacts-close-button"></button>
-        <ul>
-          <li><input type="text" name="name" placeholder="Как вас зовут?"></li>
-          <li><input type="text" name="contacts-email" placeholder="Ваша почта для ответа"></li>
-          <li><textarea name="contacts-comment" id="comment">
-            Напишите что-нибудь...
-          </textarea></li>
-        </ul>
+      <div class="contacts">
+        <p>Адрес главного офиса и<br>
+          офлайн магазина:<br>
+          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+        </p>
+        <p>Для заказов по телефону:<br>
+          <b>8 812 450-25-25</b><br>
+          (с 10 до 20 ежедневно)
+        </p>
+        <a class="button contacts-button" href="/">Форма обратной связи</a>
+        <div class="contacts-form">
+          <b>Мы обязательно вам ответим!</b>
+          <button class="contacts-close-button"></button>
+          <ul>
+            <li><input type="text" name="name" placeholder="Как вас зовут?"></li>
+            <li><input type="text" name="contacts-email" placeholder="Ваша почта для ответа"></li>
+            <li><textarea name="contacts-comment" id="comment">
+              Напишите что-нибудь...
+            </textarea></li>
+          </ul>
+        </div>
       </div>
     </div>
 
+
     <footer class="main-footer">
       <div class="container">
-        <div class="social-buttons">
-          <a href="">Twitter</a>
-          <a href="">Instagram</a>
-          <a href="">Facebook</a>
-          <a href="">Вконтакте</a>
+        <div class="social">
+          <a class="social-link social-link-tw" href="">Twitter</a>
+          <a class="social-link social-link-inst" href="">Instagram</a>
+          <a class="social-link social-link-fb" href="">Facebook</a>
+          <a class="social-link social-link-vk" href="">Вконтакте</a>
         </div>
 
         <div class="about-us">
