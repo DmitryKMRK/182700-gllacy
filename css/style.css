@@ -5,19 +5,336 @@ body {
   color: #323232;
 }
 
-.features h1 {
-  font-size: 24px;
-  line-height: 30px;
-}
-
 h2 {
   font-size: 60px;
   line-height: 60.35px;
-  color: #ffffff;
+  /*color: #ffffff;*/
 }
 
 h1 {
   font-size: 35px;
   line-height: 41px;
-  color: #ffffff;
+  /*color: #ffffff;*/
+}
+
+/*временно скрыл ховеры*/
+
+.submenu,
+.search-window,
+.login-window,
+.cart-window,
+.slide-2,
+.slide-3,
+.item-button,
+.contacts-form {
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  outline: 2px solid green;
+  box-sizing: border-box;
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 1px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+header {
+  outline: 2px solid blue;
+  min-height: 113px;
+}
+
+.main-logo {
+  outline: 2px solid red;
+  width: 154px;
+  float: left;
+  margin-top: 8px;
+  margin-right: 24px;
+}
+
+.main-navigation {
+  width: 650px;
+  float: left;
+  margin-top: 22px;
+}
+
+.main-menu {
+  outline: 2px solid green;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.main-menu > li {
+  display: block;
+  min-height: 32px;
+  outline: 2px solid yellow;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 28px;
+}
+
+.user-block {
+  outline: 2px solid orange;
+  width: 265px;
+  float: right;
+  margin-top: 22px;
+}
+
+.cart-block {
+  outline: 2px solid green;
+  width: 117px;
+  min-height: 32px;
+  float: right;
+}
+
+.login-block {
+  outline: 2px solid blue;
+  width: 92px;
+  min-height: 32px;
+  float: left;
+  margin-right: 10px;
+}
+
+.search-block {
+  outline: 2px solid red;
+  width: 33px;
+  min-height: 32px;
+  float: left;
+  margin-right: 10px;
+}
+
+.opening-times {
+  outline: 2px solid red;
+  width: 170px;
+  min-height: 38px;
+  float: right;
+  margin-top: 19px;
+}
+
+.slider {
+  outline: 2px solid red;
+  min-height: 495px;
+  padding-top: 1px;
+}
+
+.slide h2 {
+  width: 700px;
+  margin-top: 265px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-button {
+  width: 280px;
+  margin-top: 39px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promo-block {
+  outline: 2px solid blue;
+  margin-top: 25px;
+}
+
+.promo {
+  width: 560px;
+  min-height: 229px;
+}
+
+.promo-left {
+  outline: 2px solid red;
+  float: left;
+}
+
+.promo-right {
+  outline: 2px solid red;
+  float: right;
+}
+
+.hits-list {
+  outline: 2px solid blue;
+  margin-top: 40px;
+  min-height: 322px;
+}
+
+.catalog-item {
+  display: inline-block;
+  width: 267px;
+  margin-right: 21px;
+}
+
+.catalog-item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.features {
+  outline: 2px solid red;
+  margin-top: 40px;
+  padding-top: 1px;
+  padding-left: 21px;
+}
+
+.features h1 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 23px;
+}
+
+.feature {
+  display: inline-block;
+  width: 475px;
+}
+
+.feature-1,
+.feature-3 {
+  margin-right: 73px;
+  margin-left: 56px;
+}
+
+.blog-email-block {
+  outline: 2px solid blue;
+  min-height: 220px;
+  margin-top: 40px;
+}
+
+.blog {
+  outline: 2px solid yellow;
+  width: 560px;
+  float: left;
+}
+
+.email-listing {
+  outline: 2px solid yellow;
+  width: 560px;
+  float: right;
+}
+
+.map-container {
+  outline: 2px solid green;
+  box-sizing: border-box;
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.main-footer {
+  outline: 2px solid red;
+  min-height: 103px;
+}
+
+.social {
+  outline: 2px solid blue;
+  width: 185px;
+  float: left;
+  margin-top: 35px;
+  margin-right: 214px;
+}
+
+.social-link {
+  display: inline-block;
+}
+
+.about-us {
+  outline: 2px solid blue;
+  width: 326px;
+  float: left;
+  margin-top: 35px;
+}
+
+.about-us a {
+  display: inline-block;
+}
+
+.copyright {
+  outline: 2px solid blue;
+  float: right;
+  margin-top: 18px;
+}
+
+
+/*icecream.html*/
+
+.breadcrumbs {
+  outline: 2px solid red;
+}
+
+.breadcrumbs ul {
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-item {
+  display: inline-block;
+}
+
+h1 {
+  outline: 2px solid blue;
+  margin: 0;
+  margin-top: 14px;
+}
+
+.main-form {
+  outline: 2px solid yellow;
+  width: 931px;
+  min-height: 130px;
+  margin-top: 38px;
+}
+
+.main-form fieldset {
+  min-height: 56px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sort {
+  width: 193px;
+}
+
+.price {
+  width: 218px;
+}
+
+.fat {
+  width: 415px;
+}
+
+.filling {
+  width: 702px;
+}
+
+.catalog-items-list {
+  outline: 2px solid red;
+  margin-top: 40px;
+}
+
+.catalog-items-list .catalog-item {
+  margin-bottom: 35px;
+}
+
+.pagination {
+  outline: 2px solid red;
+  width: 190px;
+  float: right;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination-item {
+  display: inline-block;
 }
