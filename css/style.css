@@ -27,7 +27,10 @@ h1 {
 .cart-window,
 .slide-2,
 .slide-3,
-.item-button {
+.item-button,
+.search-window,
+.login-window,
+.contacts-form {
   display: none;
 }
 
@@ -148,6 +151,10 @@ header {
   border-radius: 5px;
 }
 
+.main-menu-active > a {
+  background-color: #d07058;
+}
+
 .user-block {
   width: 262px;
   float: right;
@@ -158,22 +165,28 @@ header {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  color: #ffffff;
   text-decoration: none;
 }
 
-.cart-block > a {
+.cart {
   display: block;
   box-sizing: border-box;
   float: right;
   width: 117px;
   min-height: 32px;
   padding: 8px 44px;
+  padding-right: 0px;
   border-radius: 20px;
+  color: #ffffff;
   background: #a3b8ac url("../img/sprite.png") no-repeat 6px -112px;
 }
 
-.cart-block > a:hover {
+.cart:hover {
+  color: #333333;
+  background: #f8f7f4 url("../img/sprite.png") no-repeat 6px -72px;
+}
+
+.cart-active {
   color: #333333;
   background: #f8f7f4 url("../img/sprite.png") no-repeat 6px -72px;
 }
@@ -191,6 +204,7 @@ header {
   margin-right: 10px;
   padding: 8px 45px;
   border-radius: 20px;
+  color: #ffffff;
   background: #a3b8ac url("../img/sprite.png") no-repeat 6px -409px;
 }
 
@@ -426,11 +440,8 @@ header {
 
 .catalog-item {
   width: 267px;
-  text-align: center;
-}
-
-.catalog-item-hit {
   position: relative;
+  text-align: center;
 }
 
 .catalog-item-hit:before {
@@ -839,7 +850,11 @@ header {
 /*icecream.html*/
 
 .breadcrumbs {
-  outline: 2px solid red;
+  width: 500px;
+  margin-top: -19px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
 }
 
 .breadcrumbs ul {
@@ -849,47 +864,160 @@ header {
 
 .breadcrumbs-item {
   display: inline-block;
+  margin-right: 5px;
+}
+
+.breadcrumbs-item a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 h1 {
   margin: 0;
-  margin-top: 14px;
+  margin-top: 4px;
 }
 
 .main-form {
-  outline: 2px solid yellow;
+  padding: 0;
   width: 931px;
   min-height: 130px;
-  margin-top: 38px;
+  margin-top: 26px;
 }
 
 .main-form fieldset {
   min-height: 56px;
+  padding: 0;
   display: inline-block;
   vertical-align: top;
+  border: none;
+}
+
+.main-form legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 .sort {
   width: 193px;
+  margin-right: 9px;
+}
+
+.sort legend {
+  margin-left: 15px;
+}
+
+.sort select {
+  box-sizing: border-box;
+  width: 193px;
+  height: 36px;
+  margin-top: 6px;
+  padding: 8px 11px;
+  border: none;
+  background-color: #a9b9af;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 20px;
+}
+
+.sort select:focus {
+  background-color: #ffffff;
+  color: #323232;
 }
 
 .price {
   width: 218px;
+  margin-right: 9px;
+}
+
+.price legend {
+  margin-left: 13px;
+}
+
+.price .main-form-range {
+  box-sizing: border-box;
+  width: 218px;
+  height: 36px;
+  margin-top: 6px;
+  background-color: #aabcb2;
+  border-radius: 20px;
 }
 
 .fat {
   width: 415px;
 }
 
+.fat legend {
+  margin-left: 14px;
+}
+
+.fat .radio-container {
+  box-sizing: border-box;
+  width: 415px;
+  height: 36px;
+  margin-top: 6px;
+  padding: 8px 15px;
+  background-color: #aabcb2;
+  border-radius: 20px;
+}
+
+.fat label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 .filling {
   width: 702px;
+  margin-top: 17px;
+}
+
+.filling legend {
+  margin-left: 15px;
+}
+
+.filling .checkbox-container {
+  box-sizing: border-box;
+  width: 702px;
+  height: 36px;
+  margin-top: 6px;
+  padding: 8px 15px;
+  background-color: #aabcb2;
+  border-radius: 20px;
+}
+
+.filling label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.main-form-button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 144px;
+  height: 36px;
+  margin-top: 38px;
+  margin-left: 7px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #a6b7ae;
+  border: 2px solid #fcfcfc;
+  border-radius: 20px;
+  cursor: pointer;
 }
 
 .catalog-items-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  outline: 2px solid red;
   margin-top: 40px;
 }
 
