@@ -20,7 +20,7 @@
             <li class="main-menu-item main-menu-active main-menu-catalog"><a href="/">Каталог</a>
                 <ul class="submenu">
                   <li class="submenu-item submenu-item-main"><a href="">Новинки</a></li>
-                  <li class="submenu-item"><a href="icecream.html">Сливочное</a></li>
+                  <li class="submenu-item submenu-item-active"><a>Сливочное</a></li>
                   <li class="submenu-item"><a href="/">Щербеты</a></li>
                   <li class="submenu-item"><a href="/">Фруктовый лед</a></li>
                   <li class="submenu-item"><a href="/">Мелорин</a></li>
@@ -55,24 +55,28 @@
           </div>
           <div class="cart-block">
             <a class="cart cart-active" href="/">2 товара</a>
-            <div class="cart-window">
+            <div class="cart-window clearfix">
               <div class="cart-items">
                 <div class="cart-item">
                   <button class="cart-item-close-button"></button>
-                  <img src="img/cart-item-1" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  <div class="cart-image">
+                    <img src="img/cart-item-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </div>
                   <span class="cart-item-name">Пломбир с апельсиновым джемом</span>
-                  <span class="cart-price-per-kg">1,5 кг х <span class="cart-price-number">200 руб.</span></span>
+                  <span class="cart-price-per-kg">1,5 кг х <b>200 руб.</b></span>
                   <span class="cart-item-price">300 руб.</span>
                 </div>
                 <div class="cart-item">
                   <button class="cart-item-close-button"></button>
-                  <img src="img/cart-item-2" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+                  <div class="cart-image">
+                    <img src="img/cart-item-2.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </div>
                   <span class="cart-item-name">Клубничный пломбир с присыпкой из белого шоколада</span>
-                  <span class="cart-price-per-kg">1,5 кг х <span class="cart-price-number">300 руб.</span></span>
+                  <span class="cart-price-per-kg">1,5 кг х <b>300 руб.</b></span>
                   <span class="cart-item-price">450 руб.</span>
                 </div>
               </div>
-              <span class="cart-total-price">Итого: 750 руб.</span>
+              <div class="cart-total-price">Итого: 750 руб.</div>
               <a class="button cart-button" href="/">Оформить заказ</a>
             </div>
           </div>
@@ -89,8 +93,10 @@
       <div class="container clearfix">
         <div class="breadcrumbs">
           <ul>
-            <li class="breadcrumbs-item"><a href="index.html">Главная »</a></li>
-            <li class="breadcrumbs-item"><a href="/">Каталог »</a></li>
+            <li class="breadcrumbs-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumbs-item">»</li>
+            <li class="breadcrumbs-item"><a href="/">Каталог</a></li>
+            <li class="breadcrumbs-item">»</li>
             <li class="breadcrumbs-item breadcrumbs-active-item"><a>Сливочное</a></li>
           </ul>
         </div>
@@ -110,7 +116,13 @@
             </fieldset>
             <fieldset class="price">
               <legend>Цена: 100 руб. &#8211 500 руб.</legend>
-              <div class="main-form-range"></div>
+              <div class="main-form-range">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
             </fieldset>
             <fieldset class="fat">
               <legend>Жирность:</legend>
@@ -133,7 +145,7 @@
                 <input type="checkbox" name="sugar" id="sugar" checked>
                 <label for="sugar">сахарные присыпки</label>
                 <input type="checkbox" name="fruit" id="fruit">
-                <label for="sugar">фрукты</label>
+                <label for="fruit">фрукты</label>
                 <input type="checkbox" name="syrup" id="syrup">
                 <label for="syrup">сиропы</label>
                 <input type="checkbox" name="jam" id="jam">
@@ -146,76 +158,124 @@
 
         <div class="catalog-items-list">
           <div class="catalog-item">
-            <img src="img/orange-ice.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <a href="/" class="catalog-item-link">
+              <img src="img/orange-ice.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            </a>
             <span class="catalog-item-price">310&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/cream-coffee-ice.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            <a href="/" class="catalog-item-link">
+              <img src="img/cream-coffee-ice.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+            </a>
             <span class="catalog-item-price">380&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочно-кофейное с кусочками шоколада</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочно-кофейное с кусочками шоколада</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/cream-strawberry-ice.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <a href="/" class="catalog-item-link">
+              <img src="img/cream-strawberry-ice.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            </a>
             <span class="catalog-item-price">355&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/creme-brulee-ice.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            <a href="/" class="catalog-item-link">
+              <img src="img/creme-brulee-ice.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+            </a>
             <span class="catalog-item-price">415&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочное крем-брюле с карамельной подливкой</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочное крем-брюле с карамельной подливкой</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/cowberry-ice.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
+            <a href="/" class="catalog-item-link">
+              <img src="img/cowberry-ice.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
+            </a>
             <span class="catalog-item-price">325&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочное с брусничным джемом</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочное с брусничным джемом</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/blueberry-ice.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+            <a href="/" class="catalog-item-link">
+              <img src="img/blueberry-ice.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+            </a>
             <span class="catalog-item-price">410&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочно-черничное с цельными ягодами черники</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочно-черничное с цельными ягодами черники</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/lemon-ice.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+            <a href="/" class="catalog-item-link">
+              <img src="img/lemon-ice.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+            </a>
             <span class="catalog-item-price">375&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочно-лимонное с карамельной присыпкой</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочно-лимонное с карамельной присыпкой</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/choc-fillings-ice.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+            <a href="/" class="catalog-item-link">
+              <img src="img/choc-fillings-ice.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+            </a>
             <span class="catalog-item-price">320&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочное с шоколадной стружкой</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочное с шоколадной стружкой</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/vanilla-ice.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+            <a href="/" class="catalog-item-link">
+              <img src="img/vanilla-ice.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+            </a>
             <span class="catalog-item-price">440&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочно-ванильное с кусочками шоколада</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочно-ванильное с кусочками шоколада</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/menthol-ice.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+            <a href="/" class="catalog-item-link">
+              <img src="img/menthol-ice.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
+            </a>
             <span class="catalog-item-price">435&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочноe с ментоловым сиропом</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочноe с ментоловым сиропом</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/black-choc-ice.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+            <a href="/" class="catalog-item-link">
+              <img src="img/black-choc-ice.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+            </a>
             <span class="catalog-item-price">355&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочное с кусочками черного шоколада</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочное с кусочками черного шоколада</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
           <div class="catalog-item">
-            <img src="img/mint-ice.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
+            <a href="/" class="catalog-item-link">
+              <img src="img/mint-ice.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
+            </a>
             <span class="catalog-item-price">420&#8381<span>/кг</span></span>
-            <h4><a href="/">Сливочное с мятным сиропом</a></h4>
-            <a class="button item-button" href="/">Быстрый просмотр</a>
+            <h4><a href="/" class="catalog-item-link">Сливочное с мятным сиропом</a></h4>
+            <div class="catalog-item-hover">
+              <a class="button item-button" href="/">Быстрый просмотр</a>
+            </div>
           </div>
         </div>
 

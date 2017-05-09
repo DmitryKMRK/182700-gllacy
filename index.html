@@ -43,7 +43,7 @@
                 </form>
               </div>
             </div>
-            <div class="login-block">
+            <div class="login-block clearfix">
               <a class="login" href="/">Вход</a>
               <div class="login-window">
                 <form action="/">
@@ -57,7 +57,7 @@
                 </div>
               </div>
             </div>
-            <div class="cart-block">
+            <div class="cart-block clearfix">
               <a class="cart" href="/">Пусто</a>
             </div>
           </div>
@@ -106,28 +106,44 @@
 
           <div class="hits-list">
             <div class="catalog-item catalog-item-hit">
-              <img src="img/orange-ice.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <a href="/" class="catalog-item-link">
+                <img src="img/orange-ice.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              </a>
               <span class="catalog-item-price">310&#8381<span>/кг</span></span>
-              <h4><a href="/">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
-              <a class="button item-button" href="/">Быстрый просмотр</a>
+              <h4><a href="/" class="catalog-item-link">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h4>
+              <div class="catalog-item-hover">
+                <a class="button item-button" href="/">Быстрый просмотр</a>
+              </div>
             </div>
             <div class="catalog-item catalog-item-hit">
-              <img src="img/cream-coffee-ice.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              <a href="/" class="catalog-item-link">
+                <img src="img/cream-coffee-ice.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+              </a>
               <span class="catalog-item-price">380&#8381<span>/кг</span></span>
-              <h4><a href="/">Сливочно-кофейное с кусочками шоколада</a></h4>
-              <a class="button item-button" href="/">Быстрый просмотр</a>
+              <h4><a href="/" class="catalog-item-link">Сливочно-кофейное с кусочками шоколада</a></h4>
+              <div class="catalog-item-hover">
+                <a class="button item-button" href="/">Быстрый просмотр</a>
+              </div>
             </div>
             <div class="catalog-item catalog-item-hit">
-              <img src="img/cream-strawberry-ice.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              <a href="/" class="catalog-item-link">
+                <img src="img/cream-strawberry-ice.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+              </a>
               <span class="catalog-item-price">355&#8381<span>/кг</span></span>
-              <h4><a href="/">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
-              <a class="button item-button" href="/">Быстрый просмотр</a>
+              <h4><a href="/" class="catalog-item-link">Сливочно-клубничное с присыпкой из белого шоколада</a></h4>
+              <div class="catalog-item-hover">
+                <a class="button item-button" href="/">Быстрый просмотр</a>
+              </div>
             </div>
             <div class="catalog-item catalog-item-hit">
-              <img src="img/creme-brulee-ice.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              <a href="/" class="catalog-item-link">
+                <img src="img/creme-brulee-ice.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+              </a>
               <span class="catalog-item-price">415&#8381<span>/кг</span></span>
-              <h4><a href="/">Сливочное крем-брюле с карамельной подливкой</a></h4>
-              <a class="button item-button" href="/">Быстрый просмотр</a>
+              <h4><a href="/" class="catalog-item-link">Сливочное крем-брюле с карамельной подливкой</a></h4>
+              <div class="catalog-item-hover">
+                <a class="button item-button" href="/">Быстрый просмотр</a>
+              </div>
             </div>
           </div>
 
@@ -161,7 +177,7 @@
 
       <div class="map-container">
         <div class="map">
-          <img src="img/map-with-pin.jpg" width="1200" height="430" alt="Карта">
+          <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6qgRXjs" width="1200" height="430" frameborder="0"></iframe>
           <div class="contacts">
             <p>Адрес главного офиса<br>
               и офлайн магазина:<br>
@@ -174,7 +190,9 @@
             <a class="button contacts-button" href="/">Форма обратной связи</a>
             <div class="contacts-form">
               <span>Мы обязательно вам ответим!</span>
-              <button class="contacts-close-button"></button>
+              <div class="contacts-close">
+                <button class="contacts-close-button"></button>
+              </div>
               <form action="/">
                 <input type="text" name="name" placeholder="Как вас зовут?">
                 <input type="text" name="contacts-email" placeholder="Ваша почта для ответа">
@@ -211,5 +229,8 @@
         </div>
       </footer>
     </div>
+
+    <script src="js/modal.js"></script>
+
   </body>
 </html>
