@@ -14,6 +14,16 @@ body > input[type="radio"] {
   display: none;
 }
 
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border: 2px solid #c7c6c5;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 2px solid #8fbdec;
+}
+
 .site-wrapper {
   min-width: 1200px;
   background-image: url("../img/slider-1.png");
@@ -315,7 +325,7 @@ header {
   font-weight: 700;
   color: #fefefe;
   text-align: center;
-  padding-top: 9px;
+  padding-top: 10px;
 }
 
 .cart-block:hover .cart-window {
@@ -375,6 +385,7 @@ header {
 .login-window input {
   box-sizing: border-box;
   width: 100%;
+  height: 44px;
   margin-bottom: 20px;
   padding: 12px 14px;
   border: 1px solid #d3d3d2;
@@ -448,6 +459,7 @@ header {
 .search-window input {
   box-sizing: border-box;
   width: 100%;
+  height: 44px;
   padding: 12px 14px;
   border: 1px solid #d3d3d2;
   border-radius: 5px;
@@ -711,7 +723,7 @@ header {
 .catalog-item h4 {
   width: 257px;
   margin-top: 7px;
-  margin-bottom: 11px;
+  margin-bottom: 0;
 }
 
 .catalog-item h4 a {
@@ -753,7 +765,6 @@ header {
   right: 40px;
   width: 200px;
   height: 45px;
-  margin-bottom: 20px;
   padding-top: 10px;
   font-size: 18px;
   line-height: 24px;
@@ -762,7 +773,7 @@ header {
 }
 
 .features {
-  margin-top: 28px;
+  margin-top: 38px;
   padding-top: 1px;
   padding-left: 20px;
   background-image: url("../img/features-background.jpg");
@@ -846,9 +857,16 @@ header {
 .blog h5 {
   width: 282px;
   margin-top: 4px;
+}
+
+.blog a {
   font-size: 24px;
   line-height: 30px;
   color: #323232;
+}
+
+.blog a:hover {
+  color: #e84d37;
 }
 
 .email-listing {
@@ -886,24 +904,6 @@ header {
   border: 1px solid #d3d3d2;
   border-radius: 3px;
   margin-bottom: 22px;
-}
-
-.email-listing-content input:hover {
-  border: 2px solid #c7c6c5;
-}
-
-.email-listing-content input:focus {
-  border: 2px solid #8fbdec;
-}
-
-.email-listing-content input:focus::before {
-  content: "Электронная почта";
-  position: absolute;
-  top: -20px;
-  left: 10px;
-  font-size: 11px;
-  line-height: 13px;
-  color: #5b9ddf;
 }
 
 .email-listing-content button {
@@ -990,9 +990,24 @@ header {
   display: block;
 }
 
+.contacts-form-overlay {
+  display: none;
+  width: 100%;
+  min-height: 2416px;
+  position: absolute;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 100;
+}
+
+.contacts-form-overlay-show {
+  display: block;
+}
+
 .contacts-form input {
   box-sizing: border-box;
   width: 267px;
+  height: 44px;
   margin-bottom: 20px;
   padding: 12px 14px;
   border: 1px solid #d3d3d2;
@@ -1175,8 +1190,11 @@ header {
 }
 
 .breadcrumbs-item a {
-  text-decoration: none;
   color: #ffffff;
+}
+
+.breadcrumbs-item a:hover {
+  color: #ffbc9e;
 }
 
 h1 {
@@ -1475,6 +1493,11 @@ h1 {
   background-color: #9db1a5;
 }
 
+.arrow-prev a:hover,
+.arrow-next a:hover {
+  background-color: transparent;
+}
+
 .arrow-prev a {
   background: url("../img/arrow-prev.png") no-repeat 5px 7px;
 }
@@ -1484,11 +1507,8 @@ h1 {
 }
 
 .pagination-active-item a {
-  background-color: #ffffff;
-}
-
-.pagination-active-item a {
   color: #323232;
+  background-color: #ffffff;
 }
 
 /*sprite*/
