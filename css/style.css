@@ -1095,13 +1095,20 @@ input[type="password"]:focus {
   background-repeat: no-repeat;
 }
 
+.social-link:hover {
+  background-position: 0px 0px;
+}
+
+.social-link:active {
+  box-shadow: inset 0px 1px 2px 1px rgba(136, 136, 136, 0.7);
+}
+
 .social-link-tw {
   background-position: -10px -567px;
 }
 
 .social-link-tw:hover {
   background-image: url("../img/tw-icon-hover.png");
-  background-position: 0px 0px;
 }
 
 .social-link-inst {
@@ -1110,7 +1117,6 @@ input[type="password"]:focus {
 
 .social-link-inst:hover {
   background-image: url("../img/inst-icon-hover.png");
-  background-position: 0px 0px;
 }
 
 .social-link-fb {
@@ -1119,7 +1125,6 @@ input[type="password"]:focus {
 
 .social-link-fb:hover {
   background-image: url("../img/fb-icon-hover.png");
-  background-position: 0px 0px;
 }
 
 .social-link-vk {
@@ -1128,7 +1133,6 @@ input[type="password"]:focus {
 
 .social-link-vk:hover {
   background-image: url("../img/vk-icon-hover.png");
-  background-position: 0px 0px;
 }
 
 .about-us {
