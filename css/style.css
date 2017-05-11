@@ -1101,18 +1101,34 @@ input[type="password"]:focus {
 
 .social-link-tw:hover {
   background-image: url("../img/tw-icon-hover.png");
+  background-position: 0px 0px;
 }
 
 .social-link-inst {
   background-position: -10px -363px;
 }
 
+.social-link-inst:hover {
+  background-image: url("../img/inst-icon-hover.png");
+  background-position: 0px 0px;
+}
+
 .social-link-fb {
   background-position: -10px -278px;
 }
 
+.social-link-fb:hover {
+  background-image: url("../img/fb-icon-hover.png");
+  background-position: 0px 0px;
+}
+
 .social-link-vk {
   background-position: -10px -619px;
+}
+
+.social-link-vk:hover {
+  background-image: url("../img/vk-icon-hover.png");
+  background-position: 0px 0px;
 }
 
 .about-us {
