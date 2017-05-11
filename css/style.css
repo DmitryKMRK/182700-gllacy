@@ -624,11 +624,13 @@ input[type="password"]:focus {
 }
 
 .promo-left {
+  background-color: #8b132a;
   background-image: url("../img/promo-left-background.jpg");
 }
 
 .promo-right {
   margin-left: auto;
+  background-color: #41291e;
   background-image: url("../img/promo-right-background.jpg");
 }
 
@@ -775,6 +777,7 @@ input[type="password"]:focus {
   margin-top: 38px;
   padding-top: 1px;
   padding-left: 20px;
+  background-color: #e9dcc0;
   background-image: url("../img/features-background.jpg");
   border-radius: 15px;
 }
