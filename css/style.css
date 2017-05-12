@@ -931,6 +931,10 @@ input[type="password"]:focus {
   background: url("../img/map.jpg") no-repeat;
 }
 
+.map iframe {
+  border: none;
+}
+
 .contacts {
   box-sizing: border-box;
   width: 302px;
