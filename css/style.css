@@ -10,17 +10,13 @@ body {
   background-color: #849d8f;
 }
 
-body > input[type="radio"] {
-  display: none;
-}
-
-input[type="text"]:hover,
-input[type="password"]:hover {
+.text-input:hover,
+.password-input:hover {
   border: 2px solid #c7c6c5;
 }
 
-input[type="text"]:focus,
-input[type="password"]:focus {
+.text-input:focus,
+.password-input:focus {
   border: 2px solid #8fbdec;
 }
 
@@ -67,9 +63,15 @@ input[type="password"]:focus {
 
 .main-logo {
   width: 154px;
+  height: 64px;
   float: left;
   margin-top: 8px;
   margin-right: 10px;
+}
+
+.main-logo img {
+  max-width: 100%;
+  height: auto;
 }
 
 .main-navigation {
@@ -91,21 +93,47 @@ input[type="password"]:focus {
 
 .main-menu-item > a {
   display: block;
+  position: relative;
   padding: 10px 14px;
   margin-bottom: 10px;
   border-radius: 20px;
   color: #ffffff;
+  font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  text-decoration: none;
+}
+
+.main-menu-item > a::after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 28px;
+  height: 1px;
+  background: #ffffff;
+  opacity: 0.2;
+}
+
+.main-menu-item:nth-child(1) > a::after {
+  width: 60px;
+}
+
+.main-menu-item:nth-child(2) > a::after {
+  width: 142px;
+}
+
+.main-menu-item:nth-child(3) > a::after {
+  width: 91px;
 }
 
 .main-menu-item > a:hover {
   background-color: #f7f6f3;
   border-radius: 20px;
-  font-size: 16px;
-  line-height: 18px;
   color: #333333;
-  text-decoration: none;
+}
+
+.main-menu-item > a:hover::after {
+  display: none;
 }
 
 .main-menu-item > a:active {
@@ -186,13 +214,17 @@ input[type="password"]:focus {
   text-decoration: none;
 }
 
+.main-menu-active > a::after {
+  display: none;
+}
+
 .user-block {
   width: 262px;
   float: right;
   margin-top: 22px;
 }
 
-.user-block > div > a {
+.user-block-item > a {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -392,7 +424,7 @@ input[type="password"]:focus {
 .login-window-button {
   float: left;
   width: 100px;
-  height: 45px;
+  min-height: 45px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -490,6 +522,10 @@ input[type="password"]:focus {
   text-align: center;
 }
 
+.slider-radio {
+  display: none;
+}
+
 .slide {
   display: none;
 }
@@ -584,7 +620,7 @@ input[type="password"]:focus {
 
 .slider-button {
   width: 280px;
-  height: 64px;
+  min-height: 64px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5px;
@@ -596,8 +632,8 @@ input[type="password"]:focus {
 }
 
 .promo-block {
-  display: flex;
   display: -ms-flexbox;
+  display: flex;
   margin-top: 36px;
 }
 
@@ -626,12 +662,14 @@ input[type="password"]:focus {
 .promo-left {
   background-color: #8b132a;
   background-image: url("../img/promo-left-background.jpg");
+  background-size: cover;
 }
 
 .promo-right {
   margin-left: auto;
   background-color: #41291e;
   background-image: url("../img/promo-right-background.jpg");
+  background-size: cover;
 }
 
 .promo-button {
@@ -654,12 +692,12 @@ input[type="password"]:focus {
 }
 
 .hits-list {
-  display: flex;
   display: -ms-flexbox;
-  justify-content: space-between;
+  display: flex;
   -ms-flex-pack: justify;
-  flex-wrap: wrap;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 40px;
   min-height: 322px;
 }
@@ -704,7 +742,7 @@ input[type="password"]:focus {
   z-index: 35;
 }
 
-.catalog-item-hit:before {
+.catalog-item-hit::before {
   content: "";
   display: block;
   width: 61px;
@@ -720,14 +758,14 @@ input[type="password"]:focus {
   border-radius: 50%;
 }
 
-.catalog-item h4 {
+.catalog-item-heading {
   width: 257px;
   margin-top: 7px;
   margin-bottom: 0;
   margin-left: 5px;
 }
 
-.catalog-item h4 a {
+.catalog-item-heading a {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -736,7 +774,7 @@ input[type="password"]:focus {
   border-bottom: 1px solid #9db1a5;
 }
 
-.catalog-item h4 a:hover {
+.catalog-item-heading a:hover {
   color: #ffbc9e;
   border-bottom: 1px solid #a7a294;
 }
@@ -765,7 +803,7 @@ input[type="password"]:focus {
   position: absolute;
   right: 40px;
   width: 200px;
-  height: 45px;
+  min-height: 45px;
   padding-top: 10px;
   font-size: 18px;
   line-height: 24px;
@@ -838,10 +876,10 @@ input[type="password"]:focus {
 }
 
 .blog-email-block {
-  display: flex;
   display: -ms-flexbox;
-  justify-content: space-between;
+  display: flex;
   -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
@@ -883,7 +921,8 @@ input[type="password"]:focus {
 }
 
 .email-listing-content {
-  padding: 13px 21px;
+  padding-top: 13px;
+  padding-left: 21px;
   background-color: #f8f7f4;
   border-radius: 10px;
   font-size: 16px;
@@ -900,18 +939,20 @@ input[type="password"]:focus {
   position: relative;
   width: 368px;
   height: 44px;
-  margin-right: 10px;
-  padding: 15px 14px;
+  margin-right: 6px;
+  padding-top: 1px;
+  padding-left: 14px;
   font-size: 16px;
   line-height: 24px;
   color: #999999;
   border: 1px solid #d3d3d2;
   border-radius: 3px;
-  margin-bottom: 22px;
+  margin-bottom: 35px;
 }
 
 .email-listing-content button {
   box-sizing: border-box;
+  width: 130px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -928,7 +969,7 @@ input[type="password"]:focus {
 
 .map {
   position: relative;
-  background: url("../img/map.jpg") no-repeat;
+  background: url("../img/map-with-pin.jpg") no-repeat;
 }
 
 .map iframe {
@@ -976,6 +1017,21 @@ input[type="password"]:focus {
   text-align: center;
 }
 
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .contacts-form {
   display: none;
   position: fixed;
@@ -997,6 +1053,7 @@ input[type="password"]:focus {
 
 .contacts-form-show {
   display: block;
+  animation: bounce 0.6s;
 }
 
 .contacts-form-overlay {
@@ -1062,7 +1119,7 @@ input[type="password"]:focus {
 .contacts-form-button {
   float: right;
   width: 139px;
-  height: 46px;
+  min-height: 46px;
   margin-top: 18px;
   font-size: 18px;
   line-height: 24px;
@@ -1142,11 +1199,12 @@ input[type="password"]:focus {
 .about-us {
   width: 309px;
   float: left;
-  margin-top: 23px;
+  margin-top: 26px;
 }
 
 .about-us a {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   font-size: 13px;
   line-height: 18px;
@@ -1198,15 +1256,15 @@ input[type="password"]:focus {
   text-decoration: none;
 }
 
-.copyright p {
-  margin-top: 1px;
+.copyright-content {
+  margin-top: 0;
 }
 
-.copyright p a {
+.copyright-content a {
   border-bottom: 1px solid #9db1a5;
 }
 
-.copyright p a:hover {
+.copyright-content a:hover {
   color: #ffbc9e;
   border-bottom: 1px solid #a7a294;
 }
@@ -1482,7 +1540,7 @@ h1.ice-cream-title {
   box-sizing: border-box;
   display: inline-block;
   width: 144px;
-  height: 36px;
+  min-height: 36px;
   margin-top: 38px;
   margin-left: 7px;
   font-size: 16px;
@@ -1507,12 +1565,12 @@ h1.ice-cream-title {
 }
 
 .catalog-items-list {
-  display: flex;
   display: -ms-flexbox;
-  flex-wrap: wrap;
+  display: flex;
   -ms-flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
   -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-top: 40px;
 }
 
